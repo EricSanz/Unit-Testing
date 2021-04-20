@@ -8,8 +8,8 @@ function lowestProduct(input) {
 
     const lowest = [];
 
-    for (let i = 0; i < input.length - 3; i++) {
-        lowest.push(array[i] * array[i + 1] * array[i + 2] * array[i + 3]);
+    for (let iterator = 0; iterator < input.length - 3; iterator++) {
+        lowest.push(array[iterator] * array[iterator + 1] * array[iterator + 2] * array[iterator + 3]);
     }
 
     return lowest.sort((a,b) => a - b)[0];
